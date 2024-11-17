@@ -1,0 +1,129 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16-nov-2024, 10:48:43
+    Author     : kenne
+*/
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #0044cc;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contenido principal */
+main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+main h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Botón regresar */
+main a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+main a:hover {
+    background-color: #0033aa;
+}
+/* Carrusel */
+.carrusel {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+
+}
+
+.carrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.carrusel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrusel .prev {
+    left: 10px;
+}
+
+.carrusel .next {
+    right: 10px;
+}
